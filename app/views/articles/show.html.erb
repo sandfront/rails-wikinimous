@@ -1,0 +1,6 @@
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+<p> This article was updated at <%= @article.updated_at %></p>
+
+<%= link_to "Edit this article", edit_article_path(@article) %>
+<%= link_to "Home", articles_path %>
