@@ -1,5 +1,7 @@
 <h2><%= @article.title %></h2>
-<p><%= @article.content %></p>
+<% @article.content.each do |para| %>
+  <p><%= para %></p>
+<% end %>
 <p> This article was updated at <%= @article.updated_at %></p>
 
 <%= link_to "Edit this article", edit_article_path(@article) %>
